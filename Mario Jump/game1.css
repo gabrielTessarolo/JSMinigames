@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Mario256';
+    src: url('SuperMario256.ttf') format('truetype');
+}
+
+.score{
+    font-family: 'Mario256', 'Arial';
+    font-size: 5em;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-shadow: 2px 2px 10px black;
+}
+
+.game-board{
+    width: 80%;
+    height: 500px;
+    border: 2px solid black;
+    display:flex;
+    margin: 300px 200px;
+    margin-left: 10%;
+    position: absolute;
+    overflow: hidden;
+    border-bottom: 10px solid green;
+
+    background: linear-gradient(blue, aqua);
+}
+
+.pipe{
+    position: absolute;
+    right: -80px;
+    width: 80px;
+    bottom: 0px;
+    /* animation: pipeMove 1.5s infinite linear; */
+}
+
+.mario{
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+}
+
+.jump{
+    width: 200px;
+    position: absolute;
+    animation: jump 500ms ease-out;
+}
+
+.clouds{
+    position:absolute;
+    top: 80px;
+    width: 350px;
+    height: 150px;;
+    animation: cloudsMove 15s infinite;
+}
+
+.titulo{
+    position: absolute;
+    top: 100px;
+    left: 55%;
+    animation: titulo 800ms infinite;
+}
+
+.play{
+    position: absolute;
+    width: 300px;
+    top: 550px;
+    left: 25%;
+    animation: play 800ms infinite;
+}
+
+@keyframes titulo{
+    50%{top: 90px;}100%{top: 100px;}
+}
+
+@keyframes play{
+    50%{top: 200px;}100%{top: 230px;}
+}
+
+@keyframes pipeMove {
+    from{
+        right: -80px;
+    }to{
+        right: 100%;
+    }
+    
+}
+
+@keyframes cloudsMove{
+    from{
+        right: -400px;
+    }to{
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0%{
+        bottom: 0px;       
+    }
+    40%{
+        bottom: 120px;
+    }
+    60%{
+        bottom: 120px;
+    }
+    100%{
+        bottom: 0px;
+    } 
+
+}

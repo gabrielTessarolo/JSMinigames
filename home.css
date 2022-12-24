@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+@font-face{
+    font-family: 'CocktailBubbly';
+    src: url('../COCKB___.TTF') format('truetype');
+}
+
+body{
+    background-color: #333;
+   
+}
+
+#mainTitle{
+    margin-left: -50px;
+    margin-top: 50px;
+    width: 250px;
+    height: 100px;
+    background-color: rgb(31, 52, 97);
+    border-radius: 10px;
+    position: absolute;
+}
+
+#mainTitle h1{
+    font-family: 'CocktailBubbly', 'Arial';
+    font-size: 4em;
+    padding-left: 80px;
+    padding-top: 20px;
+    top: -50px;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#navigation{
+    position:absolute;
+    background-color: rgb(31, 52, 97);
+    right: -10px;
+    margin-top: 50px;
+    width: 750px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#navigation ul li{
+    display: inline-block;
+    font-family: 'CocktailBubbly', 'Arial';
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 4em;
+    margin: 25px;
+    margin-top: 8px;
+    padding: 0px 10px 0px 10px;
+    background-color: rgb(61, 102, 190);
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+#navigation ul li:hover{
+    background-color: rgb(46, 77, 143)
+}
+
+#navigation ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#games{
+    position: absolute;
+    font-family: 'CocktailBubbly', 'Arial';
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 2em;
+    margin-top: 450px;
+    width: 100%;
+
+}
+
+#games ul li{
+    position:absolute;
+    text-align: right;
+    list-style: none;
+    width: 40%;
+    background-color: rgb(40, 40, 45);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: -10%;
+    border: 6px solid rgb(20, 20, 20);
+    border-radius: 15px;
+    padding-left: 50px;  
+    font-size: 50pt; 
+}
+
+#games ul li#name{
+    top: 0px;
+}
+
+#games ul li#creator{
+    top: 150px;
+}
+
+#games ul li#difficulty{
+    top: 300px;
+}
+
+#games ul li#difficulty img#star{
+    position: absolute;
+    width: 80px;
+    right: 20px;
+    top: 25px;
+}
+
+
+#games ul li#image{
+    left: 55%;
+    width: 500px;
+    height: 500px;
+    padding: 0px;
+    top: -16px;
+    /* background: none;
+    border: none; */
+
+}
+
+#games ul li#image img{
+    margin-top: -12px;
+}
+
+.enterDesc{
+    animation: enterDescription 1.75s;
+}
+
+.enterImg{
+    animation: enterImg 1.5s;
+}
+
+@keyframes enterDescription{
+    0%{
+        left: -30%;
+    }40%{   
+        left: 10%; 
+    }100%{
+        left: 0%;
+    }
+}
+
+@keyframes enterImg{
+    from{
+        left: -30%;
+    }to{
+        left: 55%;
+    }
+}
+
+#arrow{
+    position: absolute;
+    right: 120px;
+    top: 550px;
+
+    animation: arrowMove 0.5s infinite;
+}
+
+@keyframes arrowMove{
+    0%{
+        right: 120px;
+    }80%{
+        right: 150px;
+    }100%{
+        right: 120px;
+    }
+}
+
+#startDiv{
+    width: 100%;
+}
+
+#startGame{
+    position: absolute;
+    display: block;
+    font-family: 'CocktailBubbly', 'Arial';
+    font-size: 60pt;
+    background-color: rgb(52, 88, 165);
+    width: 30%;
+    left: 35%;
+    right: 35%;
+    top: 1200px;
+    border-radius: 10px;
+}
+
+#startGame a{
+    color: white;
+    text-decoration: none;
+}

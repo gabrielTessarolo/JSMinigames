@@ -1,0 +1,106 @@
+Array Methods
+pop(): Remove the last element from an array
+push(): Add a new element at the end of the array
+sort(): Sort the elements in alphabetical order
+reverse(): Sort the elements in descending order
+shift(): Remove the first element from an array
+toString(): Convert elements to strings
+unshift(): Add a new element at the start of an array
+concat(): Merge several arrays into one
+join(): Combines the elements of an array into a single string and returns the string
+slice(): Copy part of an array to a new array
+splice(): Is used to modify the contents of an array by removing existing elements and / or adding new elements.
+valueOf(): Returns the primitive value of the specified object
+indexOf(): Returns the first index at which the given element can be found in an array, or -1 if it is not present in an array.
+lastIndexOf(): Returns the last index at which the given element can be found in an array, or -1 if it is not present in an array.
+
+
+ 
+Methods for displaying the output data
+alert(): Show output to a browser dialog box
+confirm(): Opens a yes/no dialog and returns true/false depending on the user’s click
+console.log(): Displays the output to the browser console, useful for debugging
+document.write(): Writes directly to the HTML document
+ 
+
+Global functions
+isNaN(): Determines if a value is NaN (Not a Number) or not
+Number(): Converts the argument to a number representing the value of the object. If the value cannot be converted to a number, NaN is returned.
+eval(): Evaluates the JavaScript code represented as a string
+encodeURI(): Encode a URI in UTF-8
+decodeURI(): Decode a URI created by encodeURI () or other functions
+decodeURIComponent(): Decode a URI component
+parseInt(): convert a character string into an integer
+parseFloat(): convert a string to a floating point number
+isFinite(): Determines if the transmitted value is a finite number
+
+
+ 
+Methods of the String object
+match(): Retrieves the matches of a string based on a search pattern
+search(): Searches a string for the specified value and returns the position of the match.
+toLowerCase(): Convert a character string to lowercase
+toUpperCase(): Convert a character string to uppercase
+indexOf(): Provides the position of the first occurrence of a specified text in a string
+charAt(): Returns the character at the specified position in the string
+concat(): Concatenates two or more strings into one
+charCodeAt(): Returns the unicode value of a character at the specified position
+indexOf(): Provides the position of the first occurrence of a specified text in a string
+lastIndexOf(): Provides the position of the last occurrence of a specified text in a string
+slice(): Extracts part of a string and returns it as a new string
+split(): Splits a character string into an array of substrings according to a separator
+substr(): Like slice() but extracts a substring according to the number of characters specified
+substring(): Like slice() but cannot accept negative indexes
+replace(): Find and replace specific text in a string
+ 
+
+Mathematical methods
+random(): Returns a random number between 0 and 1
+round(x): Round the value of x to its nearest integer
+pow(x, y): X to the power of y
+exp(x): Exponential of x
+log(x): The natural logarithm (base E) of x
+max(x, y, z,…, n): Returns the maximum
+min(x, y, z,…, n): Returns the minimum
+abs(x): Returns the absolute value of x
+sqrt(x): The square root of x
+cos(x): The cosine of x
+sin(x): The sine of x
+tan(x): The tangent of x
+ceil(x): Round the value of x to the nearest integer
+
+ 
+Methods for manipulating dates/times in Javascript
+getDate(): Get the day of the month as a number (1-31)
+getDay(): The day of the week as a number (0-6)
+getFullYear(): Year as a four-digit number (yyyy)
+getHours(): Returns the hour (0-23)
+getMilliseconds(): Returns the milliseconds (0-999)
+getMinutes(): Returns the minutes (0-59)
+getMonth(): Returns the month as a number (0-11)
+getSeconds(): Get seconds (0-59)
+getTime(): Get milliseconds since January 1, 1970
+getUTCDate(): The day of the month on the date specified according to universal time.
+setDate(): Set the day as a number (1-31)
+setFullYear() : Set the year
+setHours(): Set the hour (0-23)
+setMilliseconds(): Set milliseconds (0 to 999)
+setMinutes(): Set minutes (0-59)
+setMonth(): Set month (0-11)
+setSeconds(): Set seconds (0-59)
+setTime(): Set the time (in milliseconds since January 1, 1970)
+setUTCDate(): Sets the day of the month for a specified date based on universal time
+ 
+
+DOM Methods
+appendChild(): Adds a new node as the last child of a parent node.
+removeChild(): Remove a child node
+replaceChild(): Replaces a child node
+cloneNode(): Clones an HTML element
+isEqualNode(): Checks if two nodes are equal
+isSameNode(): Checks if two nodes are identical
+getAttribute(): Returns the attribute value specified in a node
+hasAttribute(): Returns true if the element has attributes, otherwise false
+removeAttribute(): Removes the attribute of the specified element
+setAttribute(): Sets or modifies the value of the specified attribute
+getElementsByTagName(): returns a collection of elements with the name of the specified tag.

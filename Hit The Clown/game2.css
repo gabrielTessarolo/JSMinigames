@@ -1,0 +1,73 @@
+
+.game-board{
+    width: 80%;
+    height: 1000px;
+    border: 2px solid black;
+    display:flex;
+    margin: 300px 200px;
+    margin-left: 10%;
+    position: absolute;
+    overflow: hidden;
+
+    background:repeating-linear-gradient(yellow, red);
+}
+
+.clown{
+    position: absolute;
+    width: 30%;
+    left: 35%;
+    bottom: 0px;
+
+    animation: none;
+}
+
+
+.ball{
+    position: absolute;
+    width: 10%;
+    bottom: -10%;
+    left: 45%;
+
+}
+
+.throwingBall{
+    animation: throwBall 0.5s;
+}
+
+#score{
+    margin: 20px auto auto 20px;
+    font-size: 50pt;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    color: rgb(100, 100, 210);
+}
+
+@keyframes clownMoves{
+    0%{
+        left: 35%;
+    }
+    25%{
+        left: 5%;
+    }
+    50%{
+        left: 35%;
+    }
+    75%{
+        left: 65%;
+    }
+    100%{
+        left: 35%;
+    }
+}
+
+@keyframes throwBall{
+    0%{
+       width:10%;
+       bottom: -10%;
+       left: 45%;
+    }
+    100%{
+        width: 5%;
+        bottom: 5%;
+        left:47.5%;
+    }
+}
